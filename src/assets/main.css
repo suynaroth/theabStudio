@@ -1,1 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal&family=Moul&family=Moulpali&family=Nokora:wght@400;700&display=swap');
 @import "tailwindcss";
+@theme {
+    --font-moul: 'Moul', sans-serif;
+    --font-nokora: 'Nokora', sans-serif;
+    --font-metal: 'Metal', system-ui;
+    --font-moulpali: 'Moulpali', sans-serif;
+  }
