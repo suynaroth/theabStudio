@@ -1,7 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import Snowf from 'vue-snowf';
 </script>
 
 <template>
@@ -81,14 +79,14 @@ import Snowf from 'vue-snowf';
           :resize="true" /> -->
 
         <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center">
-          <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl mb-4 bg-linear-to-r from-amber-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent inline-block text-center py-2">
+          <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2">
             សិរីមង្គលអាពាហ៍ពិពាហ៍
           </h1>
-          <p class="text-lg md:text-xl lg:text-2xl mb-8 text-white text-center max-w-md">
+          <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#7B1F2A] text-center max-w-md">
             The Wedding Day
           </p>
           <!-- <img src="/images/mark-png-pink.svg" alt="Ornament" class="w-66 mb-8" /> -->
-          <div class="grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-white text-center max-w-md">
+          <div class="grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-[#7B1F2A] text-center max-w-md">
             <div class="grid grid-rows-2 gap-2">
               <p>លោក សុខ សប្បាយ</p>
               <p>អ្នកស្រី ឡុង ដានី</p>
@@ -101,26 +99,29 @@ import Snowf from 'vue-snowf';
 
           <div
             class="backdrop-blur-xs bg-white/15 rounded-3xl p-8 flex flex-col items-center text-center max-w-3xl shadow-xl">
-            <h3 class="text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-pink-400 text-center">
+            <h3 class="text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-[#7B1F2A] text-center">
               មានកិត្តិយសសូមគោរពអញ្ជើញ
             </h3>
-            <p class="text-white font-metal leading-loose mb-4">
+            <p class="text-[#7B1F2A] font-metal leading-loose mb-4">
               ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី
               និងជាភ្ញៀវកិត្តិយសបើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្តីជ័យមង្គលក្នុងកម្មវិធីរៀបមង្គលអាពាហ៍ពិពាហ៍
               កូនប្រុស​-​កូនស្រី របស់យើងខ្ញុំ
             </p>
+            <div class="grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-[#7B1F2A] text-center max-w-md">
+              
+            </div>
             <h2
-              class="text-3xl md:text-4xl font-moul leading-relaxed lg:text-5xl mb-4 text-pink-300 text-center flex items-center justify-center gap-2">
-              វិសាល
+              class="font-moul leading-relaxed lg:text-5xl mb-4 text-[#7B1F2A] text-center flex items-center justify-center gap-2">
+              សន វិសាល
               <img src="/images/logo.png" alt="Logo" class="w-36" />
-              ស្រីណូ
+              យ៉ាន់ ស្រីនោ
             </h2>
 
-            <p class="text-white font-metal leading-loose mb-4">
+            <p class="text-[#7B1F2A] font-metal leading-loose mb-4">
               ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃសុក្រ ៤រោច ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃទី ០៦ ខែកុម្ភៈ
               ឆ្នាំ ២០២៦
             </p>
-            <p class="text-white font-metal leading-loose mb-4">
+            <p class="text-[#7B1F2A] font-metal leading-loose mb-4">
               វេលាម៉ោង ៤: 00 រសៀល ​ស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិដង្កៀបក្តាម ឃុំពាមបន្ទារ ស្រុកកំពង់ត្របែក ខេត្តព្រៃវែង។
               ដោយមេត្រីភាព!
             </p>
@@ -133,7 +134,7 @@ import Snowf from 'vue-snowf';
             </div>
             <div class="p-6 sm:p-8 md:p-12 bg-transparent">
               <h2
-                className="text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#cd9d8a] animate-slide-down bg-white/10 p-3 sm:p-4 rounded-lg">
+                className="text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] animate-slide-down bg-white/10 p-3 sm:p-4 rounded-lg">
                 កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
               </h2>
               <div className="flex items-center justify-center mb-6 sm:mb-8 animate-fade-in-up">
@@ -154,7 +155,7 @@ import Snowf from 'vue-snowf';
                     <div class="w-0.5 bg-secondary dark:bg-primary/30 h-2"></div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីសែនក្រុងពាលី</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៦ : ០០ នាទីព្រឹក</p>
                   </div>
@@ -168,7 +169,7 @@ import Snowf from 'vue-snowf';
                     <div class="w-0.5 bg-secondary dark:bg-primary/30 h-2"></div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ជួបជុំភ្ញៀវកិត្តិយសរៀបចំពិធីហែជំនូន</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៦ : ៣០ នាទីព្រឹក</p>
                   </div>
@@ -183,7 +184,7 @@ import Snowf from 'vue-snowf';
                     <div class="w-0.5 bg-secondary dark:bg-primary/30 h-2"></div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីហែជំនូន(កំណត់)ចូលរោងជ័យ </p>
                     <p class="text-s text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៧ : ០០ នាទីព្រឹក</p>
                   </div>
@@ -198,7 +199,7 @@ import Snowf from 'vue-snowf';
                     <div class="w-0.5 bg-secondary dark:bg-primary/30 h-2"></div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីពិសាស្លាកំណត់ និង អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលព្រឹក</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៧ : ៣០ នាទីព្រឹក</p>
                   </div>
@@ -212,7 +213,7 @@ import Snowf from 'vue-snowf';
                     </div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីបំពាក់ចិញ្ចៀន</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ៨ : ៣០ នាទីព្រឹក</p>
                   </div>
@@ -225,7 +226,7 @@ import Snowf from 'vue-snowf';
                     </div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីកាត់សក់បង្កក់សិរី</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ៩ : ៣០ នាទីព្រឹក</p>
                   </div>
@@ -238,7 +239,7 @@ import Snowf from 'vue-snowf';
                     </div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីបង្វិលពពិល សំពះផ្ទឹមចងដៃ និងបាចផ្កាស្លាពរជ័យ</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ១០ : ៣០ នាទីព្រឹក</p>
                   </div>
@@ -251,7 +252,7 @@ import Snowf from 'vue-snowf';
                     </div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       អញ្ញើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ១២ : ០០ ថ្ងៃត្រង់</p>
                   </div>
@@ -264,7 +265,7 @@ import Snowf from 'vue-snowf';
                     </div>
                   </div>
                   <div class="flex flex-1 flex-col pb-6 pt-2">
-                    <p class="text-text-light font-nokora text-[#cd9d8a] text-lg font-semibold leading-normal">
+                    <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ទទួលបដិសណ្ឋារកិច្ចភ្ញៀវកិត្តិយសពិសារ ភោជនាអាហារដោយមេត្រីភាព</p>
                     <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៥ : ០០​ ល្ងាច </p>
                   </div>
