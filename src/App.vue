@@ -64,10 +64,8 @@ import { ref, onMounted } from 'vue'
       <div
         class="relative min-h-screen w-full flex flex-col justify-start items-center bg-linear-to-br from-purple-500 via-pink-500 to-red-500 px-4">
         <!-- Photo background -->
-        <div class="absolute inset-0 w-full h-full 
-         bg-no-repeat bg-center
-         bg-contain md:bg-cover
-         md:bg-fixed" style="background-image: url('/images/bg-gate.jpg');">
+        <div class="absolute inset-0 w-full h-full bg-center bg-fixed bg-no-repeat"
+          style="background-image: url('/images/bg-gate.jpg'); background-size: 100% 100%;">
         </div>
 
         <!-- Overlay -->
