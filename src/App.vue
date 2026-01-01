@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted } from 'vue'
 </script>
 
 <template>
@@ -21,14 +22,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <!-- <div class="absolute inset-0 bg-black opacity-30"></div> -->
 
         <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center">
-          <h1 class="text-3xl md:text-5xl font-moul leading-relaxed lg:text-6xl mb-4 text-pink-400 text-center">
+          <h1 class="text-3xl md:text-5xl font-moul leading-relaxed lg:text-6xl mb-4 text-pink-600   text-center">
             សិរីមង្គលអាពាហ៍ពិពាហ៍
           </h1>
           <p class="text-lg md:text-xl lg:text-2xl mb-8 text-white text-center max-w-md">
             The Wedding Day
           </p>
           <img src="/images/mark-png-pink.svg" alt="Ornament" class="w-66 mb-8" />
-          <h3 class="text-xl md:text-xl font-moul leading-relaxed lg:text-6xl mb-4 text-pink-400 text-center">
+          <h3 class="text-xl md:text-xl font-moul leading-relaxed lg:text-6xl mb-4 text-pink-600 text-center">
             សូមគោរពអញ្ជើញ
           </h3>
           <p class="text-lg md:text-xl font-moul lg:text-2xl mb-8 text-white text-center max-w-md">
@@ -50,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div
           class="min-h-screen w-full flex flex-col justify-end items-center bg-linear-to-br from-purple-500 via-pink-500 to-red-500 px-4">
           <!-- Photo background -->
-          <img src="/images/ld-bg.jpg" class="absolute inset-0 w-full h-full object-cover" />
+          <img src="/img6.jpg" class="absolute inset-0 w-full h-full object-cover" />
           <div class="story-text relative z-10 flex flex-col justify-center items-center mb-10 text-center px-4">
             <p class="text-black">{{ displayedText }}</p>
           </div>
@@ -108,7 +109,7 @@ import { RouterLink, RouterView } from 'vue-router'
               កូនប្រុស​-​កូនស្រី របស់យើងខ្ញុំ
             </p>
             <div class="grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-[#7B1F2A] text-center max-w-md">
-              
+
             </div>
             <h2
               class="font-moul leading-relaxed lg:text-5xl mb-4 text-[#7B1F2A] text-center flex items-center justify-center gap-2">
@@ -157,7 +158,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីសែនក្រុងពាលី</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៦ : ០០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ០៦ : ០០ នាទីព្រឹក</p>
                   </div>
 
                   <!-- Timeline Item 1 -->
@@ -171,7 +172,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ជួបជុំភ្ញៀវកិត្តិយសរៀបចំពិធីហែជំនូន</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៦ : ៣០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ០៦ : ៣០ នាទីព្រឹក</p>
                   </div>
 
                   <!-- Timeline Item 2 -->
@@ -186,7 +187,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីហែជំនូន(កំណត់)ចូលរោងជ័យ </p>
-                    <p class="text-s text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៧ : ០០ នាទីព្រឹក</p>
+                    <p class="text-s text-[#e73a6b] font-moul leading-normal">ម៉ោង ០៧ : ០០ នាទីព្រឹក</p>
                   </div>
 
                   <!-- Timeline Item 4 -->
@@ -201,7 +202,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីពិសាស្លាកំណត់ និង អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលព្រឹក</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៧ : ៣០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ០៧ : ៣០ នាទីព្រឹក</p>
                   </div>
 
                   <!-- Timeline Item 5 -->
@@ -215,7 +216,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីបំពាក់ចិញ្ចៀន</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ៨ : ៣០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ៨ : ៣០ នាទីព្រឹក</p>
                   </div>
                   <!-- Timeline Item 6 -->
                   <div class="flex flex-col items-center gap-1 pb-3 relative">
@@ -228,7 +229,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីកាត់សក់បង្កក់សិរី</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ៩ : ៣០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ៩ : ៣០ នាទីព្រឹក</p>
                   </div>
                   <!-- Timeline Item 7 -->
                   <div class="flex flex-col items-center gap-1 pb-3 relative">
@@ -241,7 +242,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ពិធីបង្វិលពពិល សំពះផ្ទឹមចងដៃ និងបាចផ្កាស្លាពរជ័យ</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ១០ : ៣០ នាទីព្រឹក</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ១០ : ៣០ នាទីព្រឹក</p>
                   </div>
                   <!-- Timeline Item 8 -->
                   <div class="flex flex-col items-center gap-1 pb-3 relative">
@@ -254,7 +255,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       អញ្ញើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ១២ : ០០ ថ្ងៃត្រង់</p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ១២ : ០០ ថ្ងៃត្រង់</p>
                   </div>
                   <!-- Timeline Item 8 -->
                   <div class="flex flex-col items-center gap-1 pb-3 relative">
@@ -267,10 +268,43 @@ import { RouterLink, RouterView } from 'vue-router'
                   <div class="flex flex-1 flex-col pb-6 pt-2">
                     <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
                       ទទួលបដិសណ្ឋារកិច្ចភ្ញៀវកិត្តិយសពិសារ ភោជនាអាហារដោយមេត្រីភាព</p>
-                    <p class="text-base text-[#ef9ab2] font-moul leading-normal">ម៉ោង ០៥ : ០០​ ល្ងាច </p>
+                    <p class="text-base text-[#e73a6b] font-moul leading-normal">ម៉ោង ០៥ : ០០​ ល្ងាច </p>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="relative">
+              <h2
+                class="text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] animate-slide-down bg-white/10 p-3 sm:p-4 rounded-lg">
+                កម្រងរូបភាព</h2>
+              <!-- gallery -->
+              <div class="grid grid-cols-12 gap-4">
+                <div v-for="(img, index) in images" :key="img.id"
+                  :class="['relative overflow-hidden rounded-lg cursor-pointer group', getSpanClass(index)]"
+                  @click="selectedImg = img.url">
+                  <img :src="img.url" :alt="img.alt"
+                    class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div
+                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="text-white font-medium">View Full</span>
+                  </div>
+                </div>
+              </div>
+
+              <transition name="fade">
+                <div v-if="selectedImg"
+                  class="absolute inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+                  @click="closeLightbox">
+                  <button class="absolute top-6 right-6 text-white text-4xl hover:text-gray-300 transition"
+                    @click="closeLightbox">
+                    &times;
+                  </button>
+
+                  <img :src="selectedImg"
+                    class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transition-all" @click.stop />
+                  <p class="absolute bottom-6 text-white/60 text-sm">Click anywhere to close</p>
+                </div>
+              </transition>
             </div>
           </div>
         </div>
@@ -279,6 +313,23 @@ import { RouterLink, RouterView } from 'vue-router'
 
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Prevent body scroll when lightbox is open */
+.modal-open {
+  overflow: hidden;
+}
+</style>
 
 <script>
 export default {
@@ -291,6 +342,19 @@ export default {
         "Once upon a time, in a land far away...",
       ],
       displayedText: '',
+      audio: null,
+      selectedImg: null,
+      images: [
+        { id: 1, url: '/img1.jpg', alt: 'Image 1' },
+        { id: 2, url: '/img2.jpg', alt: 'Image 2' },
+        { id: 3, url: '/img3.jpg', alt: 'Image 3' },
+        { id: 4, url: '/img4.jpg', alt: 'Image 4' },
+        { id: 5, url: '/img5.jpg', alt: 'Image 5' },
+        { id: 6, url: '/img6.jpg', alt: 'Image 6' },
+        { id: 7, url: '/img7.jpg', alt: 'Image 7' },
+        { id: 8, url: '/img8.jpg', alt: 'Image 8' },
+        { id: 9, url: '/img9.jpg', alt: 'Image 9' },
+      ],
     }
   },
   mounted() {
@@ -301,7 +365,18 @@ export default {
     }
   },
   methods: {
+    // Determine span class based on index
+    getSpanClass(index) {
+      if (index < 3) return 'col-span-4';          // Row 1: 3 images (12/3)
+      if (index === 3) return 'col-span-12';       // Row 2: 1 image  (12/1)
+      if (index > 3 && index < 6) return 'col-span-6'; // Row 3: 2 images (12/2)
+      return 'col-span-4';
+    },
     openInvitation() {
+      //play music
+      this.audio = new Audio('/songs/song.mp3')
+      this.audio.play()
+
       this.opened = true
 
       //typing effect for story texts
@@ -328,6 +403,13 @@ export default {
         }
       }
       typeNextText()
+    },
+    openLightbox(url) {
+      this.selectedImg = url
+    },
+
+    closeLightbox() {
+      this.selectedImg = null
     }
   }
 }
