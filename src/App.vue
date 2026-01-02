@@ -69,7 +69,7 @@ import { ref, onMounted } from 'vue'
       <div
         class="relative min-h-screen w-full flex flex-col justify-start items-center px-4">
         <!-- Photo background -->
-        <div class="absolute inset-0 w-full h-full bg-center bg-fixed bg-no-repeat"
+        <div class="absolute inset-0 w-full h-full bg-fixed bg-no-repeat"
           style="background-image: url('/images/bg-curve.jpg'); background-size: contain; @media (min-width: 768px) { background-size: 100% 100%; }">
         </div>
 
