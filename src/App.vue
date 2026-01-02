@@ -14,9 +14,8 @@ import { ref, onMounted } from 'vue'
           <source src="/images/vdo.mp4" type="video/mp4">
         </video> -->
 
-        <!-- Photo background -->
-        <div class="absolute inset-0 w-full h-full bg-center bg-fixed bg-no-repeat"
-          style="background-image: url('/images/bg-curve.jpg'); background-size: contain; @media (min-width: 768px) { background-size: 100% 100%; }">
+        <div class="fixed inset-0 z-0">
+          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" />
         </div>
 
         <!-- Overlay -->
@@ -29,7 +28,7 @@ import { ref, onMounted } from 'vue'
           <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#7B1F2A] text-center max-w-md">
             The Wedding Day
           </p>
-          <img src="/images/mark-png-pink.svg" alt="Ornament" class="w-66 mb-8" />
+          <img src="/images/mark-png-pink.svg" alt="Ornament" class="w-50 mb-8" />
           <h3 class="text-xl md:text-xl font-moul leading-relaxed lg:text-6xl mb-4 text-[#7B1F2A] text-center">
             សូមគោរពអញ្ជើញ
           </h3>
