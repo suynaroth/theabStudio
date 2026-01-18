@@ -38,15 +38,15 @@ const galleryRefs = ref([])
 
 // Data
 const images = [
-  { id: 1, url: '/img1.jpg', alt: 'Image 1' },
-  { id: 2, url: '/img2.jpg', alt: 'Image 2' },
-  { id: 3, url: '/img3.jpg', alt: 'Image 3' },
-  { id: 4, url: '/img4.jpg', alt: 'Image 4' },
-  { id: 5, url: '/img5.jpg', alt: 'Image 5' },
-  { id: 6, url: '/img6.jpg', alt: 'Image 6' },
-  { id: 7, url: '/img7.jpg', alt: 'Image 7' },
-  { id: 8, url: '/img8.jpg', alt: 'Image 8' },
-  { id: 9, url: '/img9.jpg', alt: 'Image 9' },
+  { id: 1, url: '/p1.jpg', alt: 'Image 1' },
+  { id: 2, url: '/p2.jpg', alt: 'Image 2' },
+  { id: 3, url: '/p3.jpg', alt: 'Image 3' },
+  { id: 4, url: '/p4.jpg', alt: 'Image 4' },
+  { id: 5, url: '/p4.jpg', alt: 'Image 5' },
+  { id: 6, url: '/p4.jpg', alt: 'Image 6' },
+  { id: 7, url: '/p4.jpg', alt: 'Image 7' },
+  { id: 8, url: '/p4.jpg', alt: 'Image 8' },
+  { id: 9, url: '/p4.jpg', alt: 'Image 9' },
 ]
 
 const timelineEvents = [
@@ -252,7 +252,7 @@ onMounted(() => {
     <transition name="fade">
       <section v-if="opened && step === 1" class="story-screen">
         <div class="min-h-screen w-full flex flex-col justify-end items-center px-4 relative">
-          <img src="/img6.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Story background" />
+          <img src="/p1.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Story background" />
 
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
