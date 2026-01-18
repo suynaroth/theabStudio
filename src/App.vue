@@ -219,7 +219,10 @@ onMounted(() => {
     <section v-if="!opened" class="landing">
       <div class="min-h-screen w-full flex flex-col justify-start items-center px-4">
         <div class="fixed inset-0 z-0">
-          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
+          <!-- <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" /> -->
+          <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="/images/vdo.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center">
@@ -257,7 +260,8 @@ onMounted(() => {
             <div class="text-center px-4">
               <transition name="text-fade">
                 <div v-if="showSaveDate" class="mb-8">
-                  <p class="font-save-date text-white text-4xl font-cinzel font-bold md:text-5xl uppercase tracking-[0.2em] mb-2">
+                  <p
+                    class="font-save-date text-white text-4xl font-cinzel font-bold md:text-5xl uppercase tracking-[0.2em] mb-2">
                     Save the date
                   </p>
                   <div class="w-20 h-1 bg-white/60 mx-auto mt-4"></div>
@@ -291,28 +295,25 @@ onMounted(() => {
     <section v-if="opened && step === 2" class="invitation">
       <div class="relative min-h-screen w-full flex flex-col justify-start items-center px-4">
         <div class="fixed inset-0 z-0">
-          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
+          <!-- <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" /> -->
+          <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="/images/vdo.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center">
-          <h1
-            data-ref="mainTitle"
-            :class="['text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2 transition-all duration-1000',
-              visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+          <h1 data-ref="mainTitle" :class="['text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2 transition-all duration-1000',
+            visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
             សិរីមង្គលអាពាហ៍ពិពាហ៍
           </h1>
 
-          <p
-            data-ref="subtitle"
-            :class="['text-lg md:text-xl lg:text-2xl mb-8 text-[#7B1F2A] text-center max-w-md transition-all duration-1000 delay-100',
-              visibleElements.subtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+          <p data-ref="subtitle" :class="['text-lg md:text-xl lg:text-2xl mb-8 text-[#7B1F2A] text-center max-w-md transition-all duration-1000 delay-100',
+            visibleElements.subtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
             The Wedding Day
           </p>
 
-          <div
-            data-ref="parentsNames"
-            :class="['grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-[#7B1F2A] text-center max-w-md transition-all duration-1000 delay-200',
-              visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+          <div data-ref="parentsNames" :class="['grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-[#7B1F2A] text-center max-w-md transition-all duration-1000 delay-200',
+            visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
             <div class="grid grid-rows-2 gap-2">
               <p>លោក សាយ សុីថូ</p>
               <p>អ្នកស្រី ឡុង ដានេ</p>
@@ -323,56 +324,43 @@ onMounted(() => {
             </div>
           </div>
 
-          <div
-            data-ref="mainCard"
-            :class="['backdrop-blur-xs bg-white/15 rounded-3xl p-8 flex flex-col items-center text-center max-w-3xl shadow-xl transition-all duration-1000 delay-300',
-              visibleElements.mainCard ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+          <div data-ref="mainCard" :class="['backdrop-blur-xs bg-white/15 rounded-3xl p-8 flex flex-col items-center text-center max-w-3xl shadow-xl transition-all duration-1000 delay-300',
+            visibleElements.mainCard ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
 
-            <h3
-              data-ref="invitationTitle"
-              :class="['text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-[#7B1F2A] text-center transition-all duration-1000 delay-400',
-                visibleElements.invitationTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+            <h3 data-ref="invitationTitle" :class="['text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-[#7B1F2A] text-center transition-all duration-1000 delay-400',
+              visibleElements.invitationTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               មានកិត្តិយសសូមគោរពអញ្ជើញ
             </h3>
 
-            <p
-              data-ref="invitationText"
-              :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-500',
-                visibleElements.invitationText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+            <p data-ref="invitationText" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-500',
+              visibleElements.invitationText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី
               និងជាភ្ញៀវកិត្តិយសបើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្តីជ័យមង្គលក្នុងកម្មវិធីរៀបមង្គលអាពាហ៍ពិពាហ៍
               កូនប្រុស​-​កូនស្រី របស់យើងខ្ញុំ
             </p>
 
-            <h2
-              data-ref="coupleNames"
-              :class="['font-moul text-base leading-relaxed lg:text-5xl mb-4 text-[#7B1F2A] text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
-                visibleElements.coupleNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+            <h2 data-ref="coupleNames" :class="['font-moul text-base leading-relaxed lg:text-5xl mb-4 text-[#7B1F2A] text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
+              visibleElements.coupleNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               សន វិសាល
               <img src="/images/logo.png" alt="Logo" class="w-36" />
               សេង ស្រីនោ
             </h2>
 
-            <p
-              data-ref="dateInfo"
-              :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-700',
-                visibleElements.dateInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-              ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃសុក្រ ៤រោច ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃទី ០៦ ខែកុម្ភៈ
+            <p data-ref="dateInfo" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-700',
+              visibleElements.dateInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+              ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃអាទិត្យ ៧កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃទី ២៥ ខែមករា
               ឆ្នាំ ២០២៦
             </p>
 
-            <p
-              data-ref="locationInfo"
-              :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-800',
-                visibleElements.locationInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-              វេលាម៉ោង ៤: 00 រសៀល ​ស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិដង្កៀបក្តាម ឃុំពាមបន្ទារ ស្រុកកំពង់ត្របែក ខេត្តព្រៃវែង។
+            <p data-ref="locationInfo" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-800',
+              visibleElements.locationInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+              វេលាម៉ោង ៤: 00 រសៀល ​ស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិអណ្តូងថ្ម ឃុំគុស ស្រុកត្រាំកក់ ខេត្តតាកែវ។
               ដោយមេត្រីភាព!
             </p>
 
-            <div
-              data-ref="detailButton"
-              :class="['mt-6 transition-all duration-1000 delay-900',
-                visibleElements.detailButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+
+            <div data-ref="detailButton" :class="['mt-6 transition-all duration-1000 delay-900',
+              visibleElements.detailButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               <RouterLink to="/main-event"
                 class="bg-pink-600 text-white font-nokora px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-pink-700 hover:scale-105 transition-all duration-300 font-semibold text-lg shadow-lg">
                 ព័ត៌មានលម្អិត
@@ -380,26 +368,21 @@ onMounted(() => {
             </div>
 
             <!-- Timeline Section -->
-            <div
-              data-ref="timelineSection"
-              :class="['p-6 sm:p-8 md:p-12 bg-transparent transition-all duration-1000 delay-1000',
-                visibleElements.timelineSection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-              <h2
-                data-ref="timelineHeader"
-                :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
-                  timelineHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+            <div data-ref="timelineSection" :class="['p-6 sm:p-8 md:p-12 bg-transparent transition-all duration-1000 delay-1000',
+              visibleElements.timelineSection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+              <h2 data-ref="timelineHeader" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
+                timelineHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
               </h2>
 
               <div class="relative">
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-secondary dark:bg-primary/30 h-full"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-secondary dark:bg-primary/30 h-full">
+                </div>
 
                 <div class="grid grid-cols-[auto_1fr] gap-x-4 -gap-y-2 text-left">
                   <template v-for="(event, index) in timelineEvents" :key="index">
-                    <div
-                      :ref="el => setTimelineRef(el, index, 'icon')"
-                      :class="['flex flex-col items-left gap-1 pt-3 relative transition-all duration-700',
-                        visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+                    <div :ref="el => setTimelineRef(el, index, 'icon')" :class="['flex flex-col items-left gap-1 pt-3 relative transition-all duration-700',
+                      visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                       <div class="text-primary text-3xl">
                         <img :src="event.icon" alt="event icon"
                           class="w-18 sm:w-12 md:w-16 rounded-xl bg-transparent mix-blend-multiply" />
@@ -419,25 +402,17 @@ onMounted(() => {
             </div>
 
             <!-- Gallery Section -->
-            <div
-              data-ref="gallerySection"
-              :class="['relative transition-all duration-1000 delay-1100',
-                visibleElements.gallerySection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-              <h2
-                data-ref="galleryTitle"
-                :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
-                  galleryTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+            <div data-ref="gallerySection" :class="['relative transition-all duration-1000 delay-1100',
+              visibleElements.gallerySection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
+              <h2 data-ref="galleryTitle" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
+                galleryTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 កម្រងរូបភាព
               </h2>
 
               <div class="grid grid-cols-12 gap-4">
-                <div
-                  v-for="(img, index) in images"
-                  :key="img.id"
-                  :ref="el => setGalleryRef(el, index)"
-                  :class="['relative overflow-hidden rounded-lg cursor-pointer group transition-all duration-700',
-                    getSpanClass(index),
-                    visibleGalleryItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']"
+                <div v-for="(img, index) in images" :key="img.id" :ref="el => setGalleryRef(el, index)" :class="['relative overflow-hidden rounded-lg cursor-pointer group transition-all duration-700',
+                  getSpanClass(index),
+                  visibleGalleryItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']"
                   @click="selectedImg = img.url">
                   <img :src="img.url" :alt="img.alt"
                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
@@ -458,8 +433,7 @@ onMounted(() => {
                       &times;
                     </button>
                     <img :src="selectedImg"
-                      class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transition-all"
-                      @click.stop
+                      class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transition-all" @click.stop
                       alt="Full size image" />
                     <p class="absolute bottom-6 text-white/60 text-sm">Click anywhere to close</p>
                   </div>
@@ -509,22 +483,58 @@ onMounted(() => {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.delay-100 { transition-delay: 100ms; }
-.delay-150 { transition-delay: 150ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
-.delay-600 { transition-delay: 600ms; }
-.delay-700 { transition-delay: 700ms; }
-.delay-800 { transition-delay: 800ms; }
-.delay-900 { transition-delay: 900ms; }
-.delay-1000 { transition-delay: 1000ms; }
-.delay-1100 { transition-delay: 1100ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.delay-600 {
+  transition-delay: 600ms;
+}
+
+.delay-700 {
+  transition-delay: 700ms;
+}
+
+.delay-800 {
+  transition-delay: 800ms;
+}
+
+.delay-900 {
+  transition-delay: 900ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
+.delay-1100 {
+  transition-delay: 1100ms;
+}
 </style>
