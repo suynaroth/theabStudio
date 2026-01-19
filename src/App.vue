@@ -217,7 +217,7 @@ onMounted(() => {
   <div id="app">
     <!-- Landing Section -->
     <section v-if="!opened" class="landing">
-      <div class="min-h-screen w-full flex flex-col justify-start items-center px-4">
+      <div class="min-h-screen w-full flex flex-col justify-start px-4">
         <div class="fixed inset-0 z-0">
           <!-- <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" /> -->
           <video autoplay muted loop playsinline class="w-full h-full object-cover">
@@ -225,14 +225,14 @@ onMounted(() => {
           </video>
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center">
+        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center">
           <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
               relative overflow-hidden">
 
             <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div>
             <!-- <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2"> -->
-            <h1 class="relative z-10 text-2xl md:text-2xl lg:text-3xl font-moul leading-relaxed
+            <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-center
                gold-text py-2
                drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
@@ -314,8 +314,8 @@ onMounted(() => {
           </video> -->
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center pt-40 items-center text-center ">
-          <div class="backdrop-blur-xs bg-white/25 rounded-[2.5rem] p-10 flex flex-col items-center
+        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center ">
+          <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
               relative overflow-hidden">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
@@ -332,7 +332,7 @@ onMounted(() => {
             <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
               visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               <div class="grid grid-rows-2 gap-2">
-                <p>លោក សាយ សុីថូ</p>
+                <p>លោក សាយ ថេត</p>
                 <p> អ្នកស្រី ឡុង ដានេ</p>
               </div>
               <div class="grid grid-rows-2 gap-2">
