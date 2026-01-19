@@ -304,7 +304,7 @@ onMounted(() => {
 
     <!-- Main Invitation -->
     <section v-if="opened && step === 2" class="invitation">
-      <div class="relative min-h-screen w-full flex flex-col justify-start items-center p-8">
+      <div class="relative min-h-[100dvh] w-full flex flex-col justify-start items-center">
         <div class="fixed inset-0 z-0">
           <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
           <!-- <video autoplay muted loop playsinline class="w-full h-full object-cover">
@@ -315,9 +315,9 @@ onMounted(() => {
         <div class="relative z-10 w-full px-4 flex flex-col justify-center pt-30 items-center text-center">
           <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
-              relative overflow-hidden">
+              relative overflow-visible">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
-            <h1 data-ref="mainTitle" :class="['text-[#7B1F2A] text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
+            <h1 data-ref="mainTitle" :class="['text-[#7B1F2A] text-lg md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
               visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
             </h1>
@@ -354,7 +354,7 @@ onMounted(() => {
                 កូនប្រុស​-​កូនស្រី របស់យើងខ្ញុំ
               </p>
 
-              <h2 data-ref="coupleNames" :class="['text-[#7B1F2A] font-moul text-lg leading-relaxed lg:text-5xl mb-4 text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
+              <h2 data-ref="coupleNames" :class="['text-[#7B1F2A] font-moul text-base leading-relaxed lg:text-5xl mb-4 text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
                 visibleElements.coupleNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 សន វិសាល
                 <img src="/images/logo.png" alt="Logo" class="w-25" />
