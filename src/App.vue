@@ -304,23 +304,23 @@ onMounted(() => {
 
     <!-- Main Invitation -->
     <section v-if="opened && step === 2" class="invitation">
-  <div class="relative min-h-[100dvh] w-full flex flex-col items-center">
+      <div class="relative min-h-screen w-full flex flex-col items-center">
 
-    <!-- Background -->
-    <div class="fixed inset-0 z-0">
-      <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
-    </div>
+        <!-- Background -->
+        <div class="fixed inset-0 z-0">
+          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
+        </div>
 
-    <!-- Content -->
-    <div class="relative z-10 w-full px-4 flex flex-col justify-center pt-24 items-center text-center">
+        <!-- Content -->
+        <div class="relative z-10 w-full px-8 flex flex-col justify-center pt-24 items-center text-center">
 
-      <!-- Glass Card -->
-      <div class="relative w-full max-w-md
-        backdrop-blur-xs bg-white/10
-        rounded-2xl md:rounded-[2.5rem]
-        p-6 md:p-10
-        shadow-2xl border border-white/30
-        overflow-visible">
+          <!-- Glass Card -->
+          <div class="relative w-full max-w-md
+            backdrop-blur-xs bg-white/10
+            rounded-3xl md:rounded-[2.5rem]
+            p-6 md:p-10
+            shadow-2xl border border-white/30
+            overflow-visible">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
             <h1 data-ref="mainTitle" :class="['text-[#7B1F2A] text-lg md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
               visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
@@ -332,14 +332,14 @@ onMounted(() => {
               The Wedding Day
             </p>
 
-            <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-4 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
+            <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-2 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
               visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               <div class="grid grid-rows-2 gap-2">
                 <p>លោក សាយ ថេត</p>
                 <p> អ្នកស្រី ឡុង ដានេ</p>
               </div>
               <div class="grid grid-rows-2 gap-2">
-                <p>លោក សេង ពិសាល</p>
+                <p>លោក សេង តារា</p>
                 <p>អ្នកស្រី​ នូ វន្នី</p>
               </div>
             </div>
@@ -475,10 +475,9 @@ onMounted(() => {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   filter:
-  drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
-          drop-shadow(0 2px 4px rgba(36, 29, 29, 0.3))
-          drop-shadow(0 0 12px rgba(241, 214, 59, 0.5));
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0 2px 4px rgba(36, 29, 29, 0.3)) drop-shadow(0 0 12px rgba(241, 214, 59, 0.5));
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
