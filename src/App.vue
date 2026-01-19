@@ -318,7 +318,7 @@ onMounted(() => {
           <div class="relative w-full max-w-md
             backdrop-blur-xs bg-white/10
             rounded-3xl md:rounded-[2.5rem]
-            p-6 md:p-10
+            p-3.5 md:p-10
             shadow-2xl border border-white/30
             overflow-visible">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
