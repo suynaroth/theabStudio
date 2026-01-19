@@ -232,7 +232,7 @@ onMounted(() => {
 
             <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div>
             <!-- <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2"> -->
-            <h1 class="relative z-10 text-2xl md:text-3xl lg:text-5xl font-moul leading-relaxed
+            <h1 class="relative z-10 text-2xl md:text-2xl lg:text-3xl font-moul leading-relaxed
                gold-text py-2
                drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
