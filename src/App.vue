@@ -304,18 +304,23 @@ onMounted(() => {
 
     <!-- Main Invitation -->
     <section v-if="opened && step === 2" class="invitation">
-      <div class="relative min-h-[100dvh] w-full flex flex-col justify-start items-center">
-        <div class="fixed inset-0 z-0">
-          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
-          <!-- <video autoplay muted loop playsinline class="w-full h-full object-cover">
-            <source src="/images/vdo.mp4" type="video/mp4" />
-          </video> -->
-        </div>
+  <div class="relative min-h-[100dvh] w-full flex flex-col items-center">
 
-        <div class="relative z-10 w-full px-4 flex flex-col justify-center pt-30 items-center text-center">
-          <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
-              text-center max-w-md shadow-2xl border border-white/30
-              relative overflow-visible">
+    <!-- Background -->
+    <div class="fixed inset-0 z-0">
+      <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 w-full px-4 flex flex-col justify-center pt-24 items-center text-center">
+
+      <!-- Glass Card -->
+      <div class="relative w-full max-w-md
+        backdrop-blur-xs bg-white/10
+        rounded-2xl md:rounded-[2.5rem]
+        p-6 md:p-10
+        shadow-2xl border border-white/30
+        overflow-visible">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
             <h1 data-ref="mainTitle" :class="['text-[#7B1F2A] text-lg md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
               visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
