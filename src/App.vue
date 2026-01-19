@@ -225,7 +225,7 @@ onMounted(() => {
           </video>
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center">
+        <div class="relative z-10 flex flex-col justify-center pt-20 items-center text-center">
           <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
               relative overflow-hidden">
@@ -237,7 +237,7 @@ onMounted(() => {
                drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
             </h1>
-            <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#fff] text-center max-w-md">
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#fffff] text-center max-w-md">
               The Wedding Day
             </p>
             <img src="/images/mark-png.svg" alt="Ornament" class="w-50 mb-8" />
@@ -306,7 +306,7 @@ onMounted(() => {
 
     <!-- Main Invitation -->
     <section v-if="opened && step === 2" class="invitation">
-      <div class="relative min-h-screen w-full flex flex-col justify-start items-center px-8">
+      <div class="relative min-h-screen w-full flex flex-col justify-start items-center px-10">
         <div class="fixed inset-0 z-0">
           <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
           <!-- <video autoplay muted loop playsinline class="w-full h-full object-cover">
@@ -314,7 +314,7 @@ onMounted(() => {
           </video> -->
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center ">
+        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center">
           <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
               relative overflow-hidden">
@@ -329,7 +329,7 @@ onMounted(() => {
               The Wedding Day
             </p>
 
-            <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-8 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
+            <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-4 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
               visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               <div class="grid grid-rows-2 gap-2">
                 <p>លោក សាយ ថេត</p>
