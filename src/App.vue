@@ -232,16 +232,14 @@ onMounted(() => {
 
             <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div>
             <!-- <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-[#7B1F2A] text-center py-2"> -->
-            <h1 class="text-2xl md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2
-               gold-text
-               drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
+            <h1 class="text-lg gold-text sm:text-3xl whitespace-nowrap font-moul p-3 sm:p-4 rounded-lg">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
             </h1>
-            <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#fffff] text-center max-w-md">
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 text-[#ffffff] text-center max-w-md">
               The Wedding Day
             </p>
             <img src="/images/mark-png.svg" alt="Ornament" class="w-50 mb-8" />
-            <h3 class="text-xl md:text-xl font-moul leading-relaxed lg:text-6xl mb-4 gold-text text-center">
+            <h3 class="text-lg md:text-xl font-moul leading-relaxed lg:text-6xl mb-4 gold-text text-center">
               សូមគោរពអញ្ជើញ
             </h3>
             <div class="w-55 h-1 bg-white/60 mx-auto"></div>
@@ -306,7 +304,7 @@ onMounted(() => {
 
     <!-- Main Invitation -->
     <section v-if="opened && step === 2" class="invitation">
-      <div class="relative min-h-screen w-full flex flex-col justify-start items-center px-10">
+      <div class="relative min-h-screen w-full flex flex-col justify-start items-center p-8">
         <div class="fixed inset-0 z-0">
           <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
           <!-- <video autoplay muted loop playsinline class="w-full h-full object-cover">
@@ -314,7 +312,7 @@ onMounted(() => {
           </video> -->
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center pt-30 items-center text-center">
+        <div class="relative z-10 w-full px-4 flex flex-col justify-center pt-30 items-center text-center">
           <div class="backdrop-blur-xs bg-white/10 rounded-[2.5rem] p-10 flex flex-col items-center
               text-center max-w-md shadow-2xl border border-white/30
               relative overflow-hidden">
