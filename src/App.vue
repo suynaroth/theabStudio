@@ -308,7 +308,10 @@ onMounted(() => {
 
         <!-- Background -->
         <div class="fixed inset-0 z-0">
-          <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" />
+          <!-- <img src="/images/bg-curve.jpg" class="w-full h-full object-contain" alt="Background" /> -->
+          <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="/images/vdo.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <!-- Content -->
@@ -322,12 +325,12 @@ onMounted(() => {
             shadow-2xl border border-white/30
             overflow-visible">
             <!-- <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div> -->
-            <h1 data-ref="mainTitle" :class="['text-[#7B1F2A] text-lg md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
+            <h1 data-ref="mainTitle" :class="['gold-text text-lg md:text-2xl font-moul leading-relaxed lg:text-4xl text-center py-2 transition-all duration-1000',
               visibleElements.mainTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               សិរីមង្គលអាពាហ៍ពិពាហ៍
             </h1>
 
-            <p data-ref="subtitle" :class="['text-lg md:text-xl lg:text-2xl mb-8 text-[#7B1F2A] text-center max-w-md transition-all duration-1000 delay-100',
+            <p data-ref="subtitle" :class="['text-lg md:text-xl lg:text-2xl mb-8 text-[#ffffff] text-center max-w-md transition-all duration-1000 delay-100',
               visibleElements.subtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               The Wedding Day
             </p>
@@ -335,44 +338,44 @@ onMounted(() => {
             <div data-ref="parentsNames" :class="['text-[#7B1F2A] grid grid-cols-2 gap-2 font-moul leading-relaxed mb-4 text-center max-w-md transition-all duration-1000 delay-200',
               visibleElements.parentsNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
               <div class="grid grid-rows-2 gap-2">
-                <p>លោក សាយ ថេត</p>
-                <p> អ្នកស្រី ឡុង ដានេ</p>
+                <p class="gold-text">លោក សាយ ថេត</p>
+                <p class="gold-text"> អ្នកស្រី ឡុង ដានេ</p>
               </div>
               <div class="grid grid-rows-2 gap-2">
-                <p>លោក សេង តារា</p>
-                <p>អ្នកស្រី​ នូ វន្នី</p>
+                <p class="gold-text">លោក សេង តារា</p>
+                <p class="gold-text">អ្នកស្រី​ នូ វន្នី</p>
               </div>
             </div>
 
             <div data-ref="mainCard" :class="['transition-all duration-1000 delay-300',
               visibleElements.mainCard ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
 
-              <h3 data-ref="invitationTitle" :class="['text-[#7B1F2A] text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-center transition-all duration-1000 delay-400',
+              <h3 data-ref="invitationTitle" :class="['gold-text text-lg md:text-lg font-moul leading-relaxed lg:text-xl mb-4 text-center transition-all duration-1000 delay-400',
                 visibleElements.invitationTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 មានកិត្តិយសសូមគោរពអញ្ជើញ
               </h3>
 
-              <p data-ref="invitationText" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-500',
+              <p data-ref="invitationText" :class="['dust-white-text font-metal leading-loose mb-4 transition-all duration-1000 delay-500',
                 visibleElements.invitationText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី
                 និងជាភ្ញៀវកិត្តិយសបើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្តីជ័យមង្គលក្នុងកម្មវិធីរៀបមង្គលអាពាហ៍ពិពាហ៍
                 កូនប្រុស​-​កូនស្រី របស់យើងខ្ញុំ
               </p>
 
-              <h2 data-ref="coupleNames" :class="['text-[#7B1F2A] font-moul text-base leading-relaxed lg:text-5xl mb-4 text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
+              <h2 data-ref="coupleNames" :class="['gold-text font-moul text-base leading-relaxed lg:text-5xl mb-4 text-center flex items-center justify-center gap-2 transition-all duration-1000 delay-600',
                 visibleElements.coupleNames ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 សន វិសាល
                 <img src="/images/logo.png" alt="Logo" class="w-25" />
                 សេង ស្រីនោ
               </h2>
 
-              <p data-ref="dateInfo" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-700',
+              <p data-ref="dateInfo" :class="['dust-white-text font-metal leading-loose mb-4 transition-all duration-1000 delay-700',
                 visibleElements.dateInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃអាទិត្យ ៧កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃទី ២៥ ខែមករា
                 ឆ្នាំ ២០២៦
               </p>
 
-              <p data-ref="locationInfo" :class="['text-[#7B1F2A] font-metal leading-loose mb-4 transition-all duration-1000 delay-800',
+              <p data-ref="locationInfo" :class="['dust-white-text font-metal leading-loose mb-4 transition-all duration-1000 delay-800',
                 visibleElements.locationInfo ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                 វេលាម៉ោង ៤: 00 រសៀល ​ស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិអណ្តូងថ្ម ឃុំគុស ស្រុកត្រាំកក់ ខេត្តតាកែវ។
                 ដោយមេត្រីភាព!
@@ -390,7 +393,7 @@ onMounted(() => {
               <!-- Timeline Section -->
               <div data-ref="timelineSection" :class="['p-6 sm:p-8 md:p-12 bg-transparent transition-all duration-1000 delay-1000',
                 visibleElements.timelineSection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-                <h2 data-ref="timelineHeader" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
+                <h2 data-ref="timelineHeader" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul gold-text bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
                   timelineHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                   កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
                 </h2>
@@ -411,10 +414,10 @@ onMounted(() => {
                       </div>
                       <div :class="['flex flex-1 flex-col pb-6 pt-2 transition-all duration-700 delay-150',
                         visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-                        <p class="text-text-light font-nokora text-[#7B1F2A] text-lg font-semibold leading-normal">
+                        <p class="text-text-light font-nokora gold-text text-lg font-semibold leading-normal">
                           {{ event.title }}
                         </p>
-                        <p class="text-base text-[#e73a6b] font-moul leading-normal">{{ event.time }}</p>
+                        <p class="text-base dust-white-text font-moul leading-normal">{{ event.time }}</p>
                       </div>
                     </template>
                   </div>
@@ -424,7 +427,7 @@ onMounted(() => {
               <!-- Gallery Section -->
               <div data-ref="gallerySection" :class="['relative transition-all duration-1000 delay-1100',
                 visibleElements.gallerySection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-                <h2 data-ref="galleryTitle" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul text-[#7B1F2A] bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
+                <h2 data-ref="galleryTitle" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul gold-text bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
                   galleryTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                   កម្រងរូបភាព
                 </h2>
@@ -476,6 +479,17 @@ onMounted(() => {
   background-clip: text;
   filter:
     drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0 2px 4px rgba(36, 29, 29, 0.3)) drop-shadow(0 0 12px rgba(241, 214, 59, 0.5));
+}
+.dust-white-text {
+  color: #fcf4f4; /* Your specific color */
+
+  /* Layer 1: Sharp dark outline (0.8 opacity) for immediate legibility
+    Layer 2: Soft dark spread to create depth against the flowers
+    Layer 3: Subtle dark-brown glow to anchor the yellow tones
+  */
+  filter:
+    drop-shadow(0 2px 2px rgba(0, 0, 0, 0.8))
+
 }
 
 .fade-enter-active,
