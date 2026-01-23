@@ -42,11 +42,11 @@ const images = [
   { id: 2, url: '/p2.jpg', alt: 'Image 2' },
   { id: 3, url: '/p3.jpg', alt: 'Image 3' },
   { id: 4, url: '/p4.jpg', alt: 'Image 4' },
-  { id: 5, url: '/p4.jpg', alt: 'Image 5' },
-  { id: 6, url: '/p4.jpg', alt: 'Image 6' },
-  { id: 7, url: '/p4.jpg', alt: 'Image 7' },
-  { id: 8, url: '/p4.jpg', alt: 'Image 8' },
-  { id: 9, url: '/p4.jpg', alt: 'Image 9' },
+  { id: 5, url: '/p5.jpg', alt: 'Image 5' },
+  { id: 6, url: '/p6.jpg', alt: 'Image 6' },
+  { id: 7, url: '/p7.jpg', alt: 'Image 7' },
+  { id: 8, url: '/p8.jpg', alt: 'Image 8' },
+  { id: 9, url: '/p3.jpg', alt: 'Image 9' },
 ]
 
 const timelineEvents = [
