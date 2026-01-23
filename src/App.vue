@@ -393,7 +393,7 @@ onMounted(() => {
               <!-- Timeline Section -->
               <div data-ref="timelineSection" :class="['p-6 sm:p-8 md:p-12 bg-transparent transition-all duration-1000 delay-1000',
                 visibleElements.timelineSection ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
-                <h2 data-ref="timelineHeader" :class="['text-lg sm:text-xl text-center whitespace-nowrap font-moul gold-text bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
+                <h2 data-ref="timelineHeader" :class="['text-lg sm:text-lg text-center whitespace-nowrap font-moul gold-text bg-white/10 p-3 sm:p-4 rounded-lg transition-all duration-1000',
                   timelineHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']">
                   កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
                 </h2>
